@@ -25,7 +25,7 @@ TODO: Pendiente por agregar a pip
 
 ## Uso
 
-####Extienda la clase en su componente:
+#### Extienda la clase en su componente:
 
 ```
 from CacheableKeras import KerasCacheable
@@ -35,7 +35,7 @@ class YourComponent(BaseEstimator, TransformerMixin, KerasCacheable):
 ```
 *Nota: Este ejemplo es para un **TransformerMixin** perfectamente puede usarse en **RegressorMixin** o **ClassifierMixin** segun sea el objetivo de su componente.*
 
-####Defina Funciones Personalizadas:
+#### Defina Funciones Personalizadas:
 Puede decir las funciones que quiere que su modelo ejecute sobrescribiendo el método **get_custom_objects** así:
 
 ```
@@ -46,7 +46,7 @@ def get_custom_objects(self):
 y la reference_function debe estar definida en **YourComponent**. 
 En caso de necesitar más de una función personalizada agréguela al diccionario.*
 
-####Personalice la configuración:
+#### Personalice la configuración:
 **keras GridSearch Cacheable** trabaja por defecto con **TODOS** los parámetros de entrada **YourComponent**. 
 Sin embargo, si por algún motivo no desea cachear todos los parámetros de entrada sobrescriba el método **get_params_cacheable** así: 
 
@@ -57,5 +57,5 @@ def get_params_cacheable(self):
 *Nota: Tenga en cuidado al realizar esta modificación, si no coloca **TODOS** los parámetros obligatorios para **YourComponent** al cargar el modelo creado desde su manejador de cache se retornará un error.*
 
 
-######Producto desarrollado bajo el curso de posgrado de aprendizaje de máquina avanzado impartido por el profesor Andrés Marino Álvarez – Universidad Nacional  
-######Autor: Daniel Espinosa - 2020
+###### Producto desarrollado bajo el curso de posgrado de aprendizaje de máquina avanzado impartido por el profesor Andrés Marino Álvarez – Universidad Nacional  
+###### Daniel Espinosa - 2020
