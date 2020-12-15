@@ -15,7 +15,7 @@ def downloadDriveFile(file_id,file_name,file_extension):
   !wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id='$file_id -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id="$file_id -O "$file_name"."$file_extension" && rm -rf /tmp/cookies.txt
 
 downloadDriveFile("1G9uWCkxwyE-qISaYbXYtnM21wT1kz11X","CacheableKeras","py")
-from CacheableKeras import KerasCacheable
+from cacheable_keras.cacheable import KerasCacheable
 ```
 
 ##### En General
