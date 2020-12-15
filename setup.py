@@ -11,7 +11,7 @@ setuptools.setup(
     description="Reducción de tiempo de ejecución de los algoritmos de Machine Learning con búsqueda de parámetros en GridSearch.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/jacobogomez/keras-grid-search-cacheable",
+    url="https://github.com/machine-learning-tools/keras-grid-search-cacheable",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
